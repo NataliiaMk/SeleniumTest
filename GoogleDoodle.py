@@ -16,6 +16,7 @@ element2 = driver.find_element_by_id('language-menu').click()
 select = Select(driver.find_element_by_name('hl'))
 
 select.select_by_value('ru')
+print('Ru selected')
 
 element3 = driver.find_element_by_id('searchinput').send_keys('День независимости Украины 2018' + Keys.ENTER)
 time.sleep(5)
